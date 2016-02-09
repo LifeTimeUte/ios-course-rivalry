@@ -9,6 +9,12 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var ULogo: UIImageView!
+    @IBOutlet weak var YLogo: UIImageView!
+    @IBOutlet weak var RedButton: UIButton!
+    @IBOutlet weak var BlueButton: UIButton!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +24,12 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    @IBAction func HideRed(sender: AnyObject) {
+        ULogo.hidden = true
+    }
+    @IBAction func HideBlue(sender: AnyObject) {
+        YLogo.hidden = true
     }
 
 
